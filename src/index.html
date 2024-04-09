@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Köszöntelek</h1>
+        <p>
+            Ezt az oldalt azért hoztuk Létre (Bencsik Boglár,Ambrus Zsolt), hogy meg keresd benne a hibákat ha találsz jó szorakozást. 
+        </p>
+
+
+        <h1>Összeadás</h1>
+        <p>Adja meg az összeadandó számokat:</p>
+
+        <input type="number" id="szam1Input" placeholder="Első szám">
+        <input type="number" id="szam2Input" placeholder="Második szám">
+        <button onclick="osszeadas()">Összeadás</button>
+        
+        <p id="eredmeny2"></p>
+
+
+        <h1>Kivonás</h1>
+        <p>Adja meg a kivonandó és a kivonó számokat:</p>
+
+        <input type="number" id="szam11Input" placeholder="Szám">
+        <input type="number" id="szam22Input" placeholder="Kivonó">
+        <button onclick="kivonas()">Kivonás</button>
+        
+        <p id="eredmeny3"></p>
+
+
+
+        <h1>
+            Terület számítás
+        </h1>
+        
+        <h2>Négyzet területének számítása</h2>
+
+<p>A négyzet területének kiszámításához add meg az oldalhosszt:</p>
+
+<input type="number" id="oldalhosszInput">
+<button onclick="szamitEsKiir()">Számítás</button>
+
+<div><button id="eredmeny"></button></div>
+
+    <h2>Derékszögű háromszög területének számítása</h2>
+
+    <p>Adja meg a derékszögű háromszög két befogóját:</p>
+
+    <input type="number" id="befogo1Input" placeholder="Első befogó">
+    <input type="number" id="befogo2Input" placeholder="Második befogó">
+    <button onclick="szamitEsKiir()">Számítás</button>
+
+    <p id="eredmeny"></p>
+
+
+    <h1>Egyenlő szárú háromszög területének számítása</h1>
+
+<p>Adja meg az egyenlő szárú háromszög alapját és egy oldalát:</p>
+
+<input type="number" id="alapInput" placeholder="Alap">
+<input type="number" id="oldalInput" placeholder="Oldal">
+<button onclick="szamolTerulet()">Számítás</button>
+
+<p id="eredmeny1"></p>
+
+
+
+
+    </div><!--VEGE container-->
+
+    <script src="bootstrap.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
